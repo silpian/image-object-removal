@@ -5,6 +5,8 @@ like with maclaurin series and prioritized by distance to current pixel
 
 calculate error rate, against actual background
 
+overlay done with Tkinter
+
 stage 1 (square overlayed onto solid color background)
 1. bounds for square
 2. iteratively calculate expected rgb from surrounding pixels
