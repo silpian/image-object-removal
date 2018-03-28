@@ -9,6 +9,9 @@ like with maclaurin series and prioritized by distance to current pixel
 
 calculate error rate, against actual background
 
+Precise derivative requires floating point colors, RGB of Pillow is series of ints.
+
+Matplotlib colormap allows floating pt values, but then you need to find a suitable way to view the image
 
 ## stage 1 (square overlayed onto solid color background)
 1. bounds for square
