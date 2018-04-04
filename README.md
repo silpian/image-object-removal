@@ -4,25 +4,20 @@
 
 Main library: Pillow (python image library), PIL is deprecated
 
-repeatedly calculate n derivatives of rgb of pixels
-like with maclaurin series and prioritized by distance to current pixel
-
-calculate error rate, against actual background
-
-Precise derivative requires floating point colors, RGB of Pillow is series of ints.
-
-Matplotlib colormap allows floating pt values, but then you need to find a suitable way to view the image
-
-## stage 1 (square overlayed onto solid color background)
+~~## stage 1 (square overlayed onto solid color background)
 1. bounds for square
 2. iteratively calculate expected Red from surrounding pixels
 
-## stage 2 (square on gradient background)
+~~## stage 2 (square on gradient background)
 1.
 2.
 3. average with calculated rgb from other side
 
-At any pt, the derivative is constant, at 255/width
+To circumvent the issue of RGB int colors, and needing floating pt precision, the image was first loaded into a floating point numpy array where calculations where done. Then, this array was converted to an array of ints, which was then loaded back into a PIL image.
+
+While an error rate check has not been completed, from first glance, the calculated image is indistinguishable from the original. Thus, any image could be put in the bounded square that was "removed," and it could be removed as if it were never there.
+
+
 
 ## stage 3 (square on "floor" image background)
 1.
