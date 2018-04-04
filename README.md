@@ -21,7 +21,9 @@ While an error rate check has not been completed, from first glance, the calcula
 
 ## stage 3 (square on "floor" image background)
 1. raw image
-![alt text] (image_01.png)
+
+![Alt text] (image_01.png)
+
 2. determine bounds for removing object
 ![alt text] (image_01_hole.png)
 3. calculate appropriate background
