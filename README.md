@@ -4,14 +4,14 @@
 
 Main library: Pillow (python image library), PIL is deprecated
 
-~~## stage 1 (square overlayed onto solid color background)
-1. bounds for square
-2. iteratively calculate expected Red from surrounding pixels~~
+~~## stage 1 (square overlayed onto solid color background)~~
+~~1. bounds for square~~
+~~2. iteratively calculate expected Red from surrounding pixels~~
 
-~~## stage 2 (square on gradient background)
-1.
-2.
-3. average with calculated rgb from other side~~
+~~## stage 2 (square on gradient background)~~
+~~1. same as stage 1~~
+~~2. same as stage 2~~
+~~3. average with calculated rgb from other side~~
 
 To circumvent the issue of RGB int colors, and needing floating pt precision, the image was first loaded into a floating point numpy array where calculations where done. Then, this array was converted to an array of ints, which was then loaded back into a PIL image.
 
