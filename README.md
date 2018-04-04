@@ -22,14 +22,15 @@ While an error rate check has not been completed, from first glance, the calcula
 ## stage 3 (square on "floor" image background)
 1. raw image
 
-![Alt text] (/image_01.png)
+![Alt text] (https://github.com/silpian/image-object-removal/blob/master/image_01.png)
 
 2. determine bounds for removing object
 
-![Alt text] (/blob/master/image_01_hole.png)
+![Alt text] (https://github.com/silpian/image-object-removal/blob/master/image_01_hole.png)
+
 3. calculate appropriate background
 
-![Alt text] (/image_01_hole_removed.png)
+![Alt text] (https://github.com/silpian/image-object-removal/blob/master/image_01_hole_removed.png)
 
 As you can see, unfortunately simple images are not easy to "fill in." I had to tweak the algorithm with a random element to add the fuzziness that is needed for it to blend in. Additionally, I also need to blur the edges into the image.
 
