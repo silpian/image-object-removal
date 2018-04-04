@@ -20,9 +20,14 @@ While an error rate check has not been completed, from first glance, the calcula
 
 
 ## stage 3 (square on "floor" image background)
-1.
-2.
-3.
+1. raw image
+![alt text] (image_01.png)
+2. determine bounds for removing object
+![alt text] (image_01_hole.png)
+3. calculate appropriate background
+![alt text] (image_01_hole_removed.png)
+
+As you can see, unfortunately simple images are not easy to "fill in." I had to tweak the algorithm with a random element to add the fuzziness that is needed for it to blend in. Additionally, I also need to blur the edges into the image.
 
 ## stage 4 (square on "flower pattern" image background)
 1
