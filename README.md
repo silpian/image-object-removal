@@ -20,11 +20,11 @@ While an error rate check has not been completed, from first glance, the calcula
 ## stage 3 (square on "floor" image background)
 1. raw image
 
-![alt text](https://raw.githubusercontent.com/silpian/image-object-removal/master/image_01.png = 250x)
+![alt text](https://raw.githubusercontent.com/silpian/image-object-removal/master/image_01.png)
 
 2. determine bounds for removing object (my water bottle)
 
-![alt text](https://raw.githubusercontent.com/silpian/image-object-removal/master/image_01_hole.png = 250x)
+![alt text](https://raw.githubusercontent.com/silpian/image-object-removal/master/image_01_hole.png)
 
 3. calculate appropriate background
 
