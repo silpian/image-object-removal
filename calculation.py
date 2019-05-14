@@ -22,11 +22,11 @@ def fill_hole(filepath, HALF_HOLE_WIDTH, HALF_HOLE_LENGTH):
     average_bounds(edit_left, 20, middle_width, middle_length, HALF_HOLE_WIDTH, HALF_HOLE_LENGTH)
     float_array_to_pixel_array(edit_left, pixel_array, middle_width, middle_length, HALF_HOLE_WIDTH, HALF_HOLE_LENGTH)
 
-
+    print("Shape of pixel_array: {}".format(pixel_array.shape))
     calculated = Image.fromarray(pixel_array)
     filename, file_extension = os.path.splitext(filepath)
 
-    calculated.save('calculated img/' + os.path.basename(filename) + '_removed_one_side.png', "PNG")
+    calculated.save('data/img/calculated/' + os.path.basename(filename) + '_removed_one_side.png', "PNG")
 
 def gradient_by_row(edit_left, edit_right, middle_width, middle_length, HALF_HOLE_WIDTH, HALF_HOLE_LENGTH, width, length):
     for j in range(middle_length - HALF_HOLE_LENGTH, middle_length + HALF_HOLE_LENGTH):
@@ -93,4 +93,4 @@ def weighted_average_array(edit_left, edit_right, pixel_array, middle_width, mid
             pixel_array[j][i] = np.sqrt(((weight_left)*edit_left[j][i]*edit_left[j][i] + (weight_right)*edit_right[j][i]*edit_right[j][i]) / (2*HALF_HOLE_WIDTH))
 
 if __name__ == "__main__":
-    fill_hole("intermediate img/image_01_hole.png", 200, 200)
+    fill_hole("data/img/intermediate/floor_4_hole.png", 200, 200)
